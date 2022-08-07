@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+/* I think the order you define these makes a difference */
+
+#imageSlider {
+  height: 25rem;
+}
+
+/* for max-width, biggest max width has to go first */
+
+@media (max-width: 610px) {
+  #imageSlider {
+    height: 22rem;
+  }
+}
+
+@media (max-width: 520px) {
+  #imageSlider {
+    height: 18rem;
+  }
+}
+
+@media (max-width: 440px) {
+  #imageSlider {
+    height: 14rem;
+  }
+}
+
+@media (max-width: 300px) {
+  #imageSlider {
+    height: 10rem;
+  }
+}
+
+
+/* for min-width, smallest min width has to go first */
+
+/* sm */
+@media (min-width: 640px) {
+  #imageSlider {
+    height: 29rem;
+  }
+}
+
+/* tailwind md */
+@media (min-width: 768px) {
+  #imageSlider {
+    height: 31rem;
+  }
+}
+
+/* tailwind lg */
+@media (min-width: 1024px) {
+  #imageSlider {
+    height: 35rem;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  #imageSlider {
+    height: 35rem;
+  }
+}
