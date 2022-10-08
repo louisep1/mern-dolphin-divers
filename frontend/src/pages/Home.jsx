@@ -31,7 +31,7 @@ function Home() {
 
   return (
     <div className='relative pb-4'>
-      <div className='pb-6 md:text-lg text-center'>Enjoy the experience of a lifetime. Dive with real, wild dolphins.</div>
+      <div className='pt-1 pb-6 md:text-2xl text-center'>Enjoy the experience of a lifetime. Dive with real, wild dolphins.</div>
       <div className="w-full relative" id='imageSlider'>
         <button className='absolute top-1/3 xl:bottom-2/4 text-4xl' onClick={prev}><RiArrowDropLeftLine /></button>
         <button className='absolute top-1/3 xl:bottom-2/4 right-0 text-4xl' onClick={next}><RiArrowDropRightLine /></button>
@@ -43,22 +43,35 @@ function Home() {
       </div>
 
       <div className='pt-4'>
-        <p>Miyakejima is but a short boat ride away from diving with these naturally free dolphins.</p>
-        <p className=''>With encounter rates highest in July through September, this is a once in a lifetime experience that any ocean lover shouldn't miss.</p>
 
-        <p className='mt-6 md:mt-12'>Here at Dolphin Dive, we specialize in trips to go and swim with the wild dolphins (including training), as well as scuba diving off the coast of Miyakejima (both beach and boat).</p>
+        <div className="card w-11/12 m-auto bg-info text-neutral-content">
+          <div className="card-body items-center text-center">
+            <h2 className="card-title">Miyakejima is but a short boat ride away from diving with these naturally free dolphins.</h2>
+            <p>With encounter rates highest in July through September, this is a once in a lifetime experience that any ocean lover shouldn't miss.</p>
+          </div>
+        </div>
 
-        <p className='mt-4'>If you have an questions or want to make a reservation, please get in touch. Whilst our services do not include the use of stay at a guest house, we are able to connect you with our partner services.</p>
+        <div className="card w-11/12 mt-6 mx-auto bg-neutral text-neutral-content">
+          <div className="card-body items-center text-center">
+            <p>Here at Dolphin Dive, we specialize in trips to go and swim with the wild dolphins (including training), as well as scuba diving off the coast of Miyakejima (both beach and boat). If you have an questions or want to make a reservation, please get in touch. Whilst our services do not include the use of stay at a guest house, we are able to connect you with our partner services.</p>
+          </div>
+        </div>
 
-        <p className="pt-16 pb-4 text-center">A small history of the island</p>
-        <img src={map} alt="map" />
 
-        <p className='py-8'>Technically part of Tokyo, the Izu Islands, including Miyakejima are worlds apart from the Tokyo we know. Miyakejima is home to Mt Oyama, an active volcano which last erupted in the summer of 2000. Whilst it's currently safe to visit, hiking around the area, you'll see the rugged landscape of the remains of the volcanic rock.</p>
-        <img src={hiking2} alt="hiking" />
 
-        <p className='py-8'>Aside from it's unique marine life, Miyakejima is also renowned for its hiking and indigenous wildlife.</p>
 
-        <img src={hiking1} alt="hiking" />
+        <p className="pt-16 pb-4 text-center md:text-xl">A small history of the island</p>
+
+        <div className="grid grid-cols-2 gap-6">
+          <img src={map} alt="map" />
+
+          <p className='py-8'>Technically part of Tokyo, the Izu Islands, including Miyakejima are worlds apart from the Tokyo we know. Miyakejima is home to Mt Oyama, an active volcano which last erupted in the summer of 2000. Whilst it's currently safe to visit, hiking around the area, you'll see the rugged landscape of the remains of the volcanic rock.</p>
+          <img src={hiking2} alt="hiking" className='order-last' />
+
+          <p className='py-8'>Aside from it's unique marine life, Miyakejima is also renowned for its hiking and indigenous wildlife.</p>
+
+          <img src={hiking1} alt="hiking" />
+        </div>
 
       </div>
 
